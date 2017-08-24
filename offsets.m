@@ -226,6 +226,44 @@ void init_RELEASE_ARM64_T8010_1650_37895227() {
     g_offsets.quad_format_string = 0xfffffff00705dda2 - g_offsets.quad_format_string;
     g_offsets.null_terminator = 0xfffffff00705e40f - g_offsets.kernel_base;
 }
+void init_RELEASE_ARM64_T7001_1650_37895227() {
+    g_offsets.kernel_base = 0xfffffff006038000;
+    g_offsets.l1icachesize_string = 0xfffffff007057a83 - g_offsets.kernel_base;
+    g_offsets.osserializer_serialize = 0xfffffff00744d8d0 - g_offsets.kernel_base;
+    g_offsets.kern_proc = 0xfffffff0075b40c8 - g_offsets.kernel_base;
+    g_offsets.cachesize_callback = 0xfffffff0073b3d24 - g_offsets.kernel_base;
+    g_offsets.kernel_base = 0xfffffff006038000 - g_offsets.kernel_base;
+    g_offsets.sysctl_hw_family = 0xfffffff00752a320 - g_offsets.kernel_base;
+    g_offsets.ret_gadget = 0xfffffff006405f70 - g_offsets.kernel_base;
+    g_offsets.iofence_vtable_offset = 0xfffffff006ecd0a0 - g_offsets.kernel_base;
+    g_offsets.l1dcachesize_handler = 0xfffffff00752a370 - g_offsets.kernel_base;
+    g_offsets.l1dcachesize_string = 0xfffffff007057a90 - g_offsets.kernel_base;
+    g_offsets.copyin = 0xfffffff00718d4a0 - g_offsets.kernel_base;
+    g_offsets.all_proc = 0xfffffff0075ae7a0 - g_offsets.kernel_base;
+    g_offsets.copyout = 0xfffffff00718d694 - g_offsets.kernel_base;
+    g_offsets.panic = 0xfffffff0070b69b8 - g_offsets.kernel_base;
+    g_offsets.quad_format_string = 0xfffffff007069de1 - g_offsets.quad_format_string;
+    g_offsets.null_terminator = 0xfffffff00706a40f - g_offsets.kernel_base;
+}
+void init_RELEASE_ARM64_T7001_1630_37893214() {
+    g_offsets.kernel_base = 0xfffffff006070000;
+    g_offsets.l1icachesize_string = 0xfffffff007057883 - g_offsets.kernel_base;
+    g_offsets.osserializer_serialize = 0xfffffff00745b300 - g_offsets.kernel_base;
+    g_offsets.kern_proc = 0xfffffff0075c20e0 - g_offsets.kernel_base;
+    g_offsets.cachesize_callback = 0xfffffff0073be4a8 - g_offsets.kernel_base;
+    g_offsets.kernel_base = 0xfffffff006070000 - g_offsets.kernel_base;
+    g_offsets.sysctl_hw_family = 0xfffffff00753a678 - g_offsets.kernel_base;
+    g_offsets.ret_gadget = 0xfffffff006401da0 - g_offsets.kernel_base;
+    g_offsets.iofence_vtable_offset = 0xfffffff006ed8748 - g_offsets.kernel_base;
+    g_offsets.l1dcachesize_handler = 0xfffffff00753a628 - g_offsets.kernel_base;
+    g_offsets.l1dcachesize_string = 0xfffffff007057890 - g_offsets.kernel_base;
+    g_offsets.copyin = 0xfffffff00718f840 - g_offsets.kernel_base;
+    g_offsets.all_proc = 0xfffffff0075bc528 - g_offsets.kernel_base;
+    g_offsets.copyout = 0xfffffff00718fa48 - g_offsets.kernel_base;
+    g_offsets.panic = 0xfffffff0070b6dd0 - g_offsets.kernel_base;
+    g_offsets.quad_format_string = 0xfffffff007069601 - g_offsets.quad_format_string;
+    g_offsets.null_terminator = 0xfffffff00706a407 - g_offsets.kernel_base;
+}
 void init_RELEASE_ARM64_S8000_1630_37893214() {
     g_offsets.kernel_base = 0xfffffff00605c000;
     g_offsets.l1icachesize_string = 0xfffffff00704b885 - g_offsets.kernel_base;
@@ -263,6 +301,25 @@ void init_RELEASE_ARM64_T7000_1630_37894221() {
     g_offsets.panic = 0xfffffff0070b6dd0 - g_offsets.kernel_base;
     g_offsets.quad_format_string = 0xfffffff007069601 - g_offsets.quad_format_string;
     g_offsets.null_terminator = 0xfffffff00706a407 - g_offsets.kernel_base;
+}
+void init_RELEASE_ARM64_S5L8960X_1630_37893214() {
+    g_offsets.kernel_base = 0xfffffff0061bc000;
+    g_offsets.l1icachesize_string = 0xfffffff00704b893 - g_offsets.kernel_base;
+    g_offsets.osserializer_serialize = 0xfffffff00744ee4c - g_offsets.kernel_base;
+    g_offsets.kern_proc = 0xfffffff0075b60e0 - g_offsets.kernel_base;
+    g_offsets.cachesize_callback = 0xfffffff0073b1ff4 - g_offsets.kernel_base;
+    g_offsets.kernel_base = 0xfffffff0061bc000 - g_offsets.kernel_base;
+    g_offsets.sysctl_hw_family = 0xfffffff00752e678 - g_offsets.kernel_base;
+    g_offsets.ret_gadget = 0xfffffff0064c1da0 - g_offsets.kernel_base;
+    g_offsets.iofence_vtable_offset = 0xfffffff006f2bd88 - g_offsets.kernel_base;
+    g_offsets.l1dcachesize_handler = 0xfffffff00752e628 - g_offsets.kernel_base;
+    g_offsets.l1dcachesize_string = 0xfffffff00704b8a0 - g_offsets.kernel_base;
+    g_offsets.copyin = 0xfffffff0071835b8 - g_offsets.kernel_base;
+    g_offsets.all_proc = 0xfffffff0075b0418 - g_offsets.kernel_base;
+    g_offsets.copyout = 0xfffffff0071837c0 - g_offsets.kernel_base;
+    g_offsets.panic = 0xfffffff0070aac30 - g_offsets.kernel_base;
+    g_offsets.quad_format_string = 0xfffffff00705d611 - g_offsets.quad_format_string;
+    g_offsets.null_terminator = 0xfffffff00705e411 - g_offsets.kernel_base;
 }
 void init_RELEASE_ARM64_T7000_1650_37895227() {
     g_offsets.kernel_base = 0xfffffff006118000;
@@ -302,21 +359,21 @@ void init_RELEASE_ARM64_S8000_1650_37895227() {
     g_offsets.quad_format_string = 0xfffffff00705dde3 - g_offsets.quad_format_string;
     g_offsets.null_terminator = 0xfffffff00705e411 - g_offsets.kernel_base;
 }
-void init_RELEASE_ARM64_T7000_1630_37893214() {
-    g_offsets.kernel_base = 0xfffffff0060cc000;
+void init_RELEASE_ARM64_T7001_1630_37894221() {
+    g_offsets.kernel_base = 0xfffffff006070000;
     g_offsets.l1icachesize_string = 0xfffffff007057883 - g_offsets.kernel_base;
-    g_offsets.osserializer_serialize = 0xfffffff00745b0dc - g_offsets.kernel_base;
+    g_offsets.osserializer_serialize = 0xfffffff00745b324 - g_offsets.kernel_base;
     g_offsets.kern_proc = 0xfffffff0075c20e0 - g_offsets.kernel_base;
-    g_offsets.cachesize_callback = 0xfffffff0073be284 - g_offsets.kernel_base;
-    g_offsets.kernel_base = 0xfffffff0060cc000 - g_offsets.kernel_base;
+    g_offsets.cachesize_callback = 0xfffffff0073be4cc - g_offsets.kernel_base;
+    g_offsets.kernel_base = 0xfffffff006070000 - g_offsets.kernel_base;
     g_offsets.sysctl_hw_family = 0xfffffff00753a678 - g_offsets.kernel_base;
-    g_offsets.ret_gadget = 0xfffffff006455da0 - g_offsets.kernel_base;
-    g_offsets.iofence_vtable_offset = 0xfffffff006ef4b08 - g_offsets.kernel_base;
+    g_offsets.ret_gadget = 0xfffffff006401da0 - g_offsets.kernel_base;
+    g_offsets.iofence_vtable_offset = 0xfffffff006ed8748 - g_offsets.kernel_base;
     g_offsets.l1dcachesize_handler = 0xfffffff00753a628 - g_offsets.kernel_base;
     g_offsets.l1dcachesize_string = 0xfffffff007057890 - g_offsets.kernel_base;
-    g_offsets.copyin = 0xfffffff00718f748 - g_offsets.kernel_base;
-    g_offsets.all_proc = 0xfffffff0075bc468 - g_offsets.kernel_base;
-    g_offsets.copyout = 0xfffffff00718f950 - g_offsets.kernel_base;
+    g_offsets.copyin = 0xfffffff00718f864 - g_offsets.kernel_base;
+    g_offsets.all_proc = 0xfffffff0075bc528 - g_offsets.kernel_base;
+    g_offsets.copyout = 0xfffffff00718fa6c - g_offsets.kernel_base;
     g_offsets.panic = 0xfffffff0070b6dd0 - g_offsets.kernel_base;
     g_offsets.quad_format_string = 0xfffffff007069601 - g_offsets.quad_format_string;
     g_offsets.null_terminator = 0xfffffff00706a407 - g_offsets.kernel_base;
@@ -359,24 +416,24 @@ void init_RELEASE_ARM64_T8010_1630_37893214() {
     g_offsets.quad_format_string = 0xfffffff00705d5d1 - g_offsets.quad_format_string;
     g_offsets.null_terminator = 0xfffffff00705e416 - g_offsets.kernel_base;
 }
-void init_RELEASE_ARM64_S5L8960X_1630_37893214() {
-    g_offsets.kernel_base = 0xfffffff0061bc000;
-    g_offsets.l1icachesize_string = 0xfffffff00704b893 - g_offsets.kernel_base;
-    g_offsets.osserializer_serialize = 0xfffffff00744ee4c - g_offsets.kernel_base;
-    g_offsets.kern_proc = 0xfffffff0075b60e0 - g_offsets.kernel_base;
-    g_offsets.cachesize_callback = 0xfffffff0073b1ff4 - g_offsets.kernel_base;
-    g_offsets.kernel_base = 0xfffffff0061bc000 - g_offsets.kernel_base;
-    g_offsets.sysctl_hw_family = 0xfffffff00752e678 - g_offsets.kernel_base;
-    g_offsets.ret_gadget = 0xfffffff0064c1da0 - g_offsets.kernel_base;
-    g_offsets.iofence_vtable_offset = 0xfffffff006f2bd88 - g_offsets.kernel_base;
-    g_offsets.l1dcachesize_handler = 0xfffffff00752e628 - g_offsets.kernel_base;
-    g_offsets.l1dcachesize_string = 0xfffffff00704b8a0 - g_offsets.kernel_base;
-    g_offsets.copyin = 0xfffffff0071835b8 - g_offsets.kernel_base;
-    g_offsets.all_proc = 0xfffffff0075b0418 - g_offsets.kernel_base;
-    g_offsets.copyout = 0xfffffff0071837c0 - g_offsets.kernel_base;
-    g_offsets.panic = 0xfffffff0070aac30 - g_offsets.kernel_base;
-    g_offsets.quad_format_string = 0xfffffff00705d611 - g_offsets.quad_format_string;
-    g_offsets.null_terminator = 0xfffffff00705e411 - g_offsets.kernel_base;
+void init_RELEASE_ARM64_T7000_1630_37893214() {
+    g_offsets.kernel_base = 0xfffffff0060cc000;
+    g_offsets.l1icachesize_string = 0xfffffff007057883 - g_offsets.kernel_base;
+    g_offsets.osserializer_serialize = 0xfffffff00745b0dc - g_offsets.kernel_base;
+    g_offsets.kern_proc = 0xfffffff0075c20e0 - g_offsets.kernel_base;
+    g_offsets.cachesize_callback = 0xfffffff0073be284 - g_offsets.kernel_base;
+    g_offsets.kernel_base = 0xfffffff0060cc000 - g_offsets.kernel_base;
+    g_offsets.sysctl_hw_family = 0xfffffff00753a678 - g_offsets.kernel_base;
+    g_offsets.ret_gadget = 0xfffffff006455da0 - g_offsets.kernel_base;
+    g_offsets.iofence_vtable_offset = 0xfffffff006ef4b08 - g_offsets.kernel_base;
+    g_offsets.l1dcachesize_handler = 0xfffffff00753a628 - g_offsets.kernel_base;
+    g_offsets.l1dcachesize_string = 0xfffffff007057890 - g_offsets.kernel_base;
+    g_offsets.copyin = 0xfffffff00718f748 - g_offsets.kernel_base;
+    g_offsets.all_proc = 0xfffffff0075bc468 - g_offsets.kernel_base;
+    g_offsets.copyout = 0xfffffff00718f950 - g_offsets.kernel_base;
+    g_offsets.panic = 0xfffffff0070b6dd0 - g_offsets.kernel_base;
+    g_offsets.quad_format_string = 0xfffffff007069601 - g_offsets.quad_format_string;
+    g_offsets.null_terminator = 0xfffffff00706a407 - g_offsets.kernel_base;
 }
 void init_RELEASE_ARM64_S8000_1630_37894221() {
     g_offsets.kernel_base = 0xfffffff00605c000;
@@ -507,6 +564,16 @@ kern_return_t offsets_determine_initializer_for_device_and_build(char * device, 
         *func = (init_func)init_RELEASE_ARM64_T8010_1650_37895227;
         ret = KERN_SUCCESS;
     }
+    else if (strcmp(u.version, "Darwin Kernel Version 16.5.0: Thu Feb 23 23:22:55 PST 2017; root:xnu-3789.52.2~7/RELEASE_ARM64_T7001") == 0) {
+        DEBUG_LOG("Detected RELEASE_ARM64_T7001");
+        *func = (init_func)init_RELEASE_ARM64_T7001_1650_37895227;
+        ret = KERN_SUCCESS;
+    }
+    else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Tue Nov 29 21:40:09 PST 2016; root:xnu-3789.32.1~4/RELEASE_ARM64_T7001") == 0) {
+        DEBUG_LOG("Detected RELEASE_ARM64_T7001");
+        *func = (init_func)init_RELEASE_ARM64_T7001_1630_37893214;
+        ret = KERN_SUCCESS;
+    }
     else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Tue Nov 29 21:40:09 PST 2016; root:xnu-3789.32.1~4/RELEASE_ARM64_S8000") == 0) {
         DEBUG_LOG("Detected RELEASE_ARM64_S8000");
         *func = (init_func)init_RELEASE_ARM64_S8000_1630_37893214;
@@ -515,6 +582,11 @@ kern_return_t offsets_determine_initializer_for_device_and_build(char * device, 
     else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Thu Dec 15 22:41:46 PST 2016; root:xnu-3789.42.2~1/RELEASE_ARM64_T7000") == 0) {
         DEBUG_LOG("Detected RELEASE_ARM64_T7000");
         *func = (init_func)init_RELEASE_ARM64_T7000_1630_37894221;
+        ret = KERN_SUCCESS;
+    }
+    else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Tue Nov 29 21:40:09 PST 2016; root:xnu-3789.32.1~4/RELEASE_ARM64_S5L8960X") == 0) {
+        DEBUG_LOG("Detected RELEASE_ARM64_S5L8960X");
+        *func = (init_func)init_RELEASE_ARM64_S5L8960X_1630_37893214;
         ret = KERN_SUCCESS;
     }
     else if (strcmp(u.version, "Darwin Kernel Version 16.5.0: Thu Feb 23 23:22:54 PST 2017; root:xnu-3789.52.2~7/RELEASE_ARM64_T7000") == 0) {
@@ -527,9 +599,9 @@ kern_return_t offsets_determine_initializer_for_device_and_build(char * device, 
         *func = (init_func)init_RELEASE_ARM64_S8000_1650_37895227;
         ret = KERN_SUCCESS;
     }
-    else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Tue Nov 29 21:40:08 PST 2016; root:xnu-3789.32.1~4/RELEASE_ARM64_T7000") == 0) {
-        DEBUG_LOG("Detected RELEASE_ARM64_T7000");
-        *func = (init_func)init_RELEASE_ARM64_T7000_1630_37893214;
+    else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Thu Dec 15 22:41:46 PST 2016; root:xnu-3789.42.2~1/RELEASE_ARM64_T7001") == 0) {
+        DEBUG_LOG("Detected RELEASE_ARM64_T7001");
+        *func = (init_func)init_RELEASE_ARM64_T7001_1630_37894221;
         ret = KERN_SUCCESS;
     }
     else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Thu Dec 15 22:41:46 PST 2016; root:xnu-3789.42.2~1/RELEASE_ARM64_S5L8960X") == 0) {
@@ -542,9 +614,9 @@ kern_return_t offsets_determine_initializer_for_device_and_build(char * device, 
         *func = (init_func)init_RELEASE_ARM64_T8010_1630_37893214;
         ret = KERN_SUCCESS;
     }
-    else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Tue Nov 29 21:40:09 PST 2016; root:xnu-3789.32.1~4/RELEASE_ARM64_S5L8960X") == 0) {
-        DEBUG_LOG("Detected RELEASE_ARM64_S5L8960X");
-        *func = (init_func)init_RELEASE_ARM64_S5L8960X_1630_37893214;
+    else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Tue Nov 29 21:40:08 PST 2016; root:xnu-3789.32.1~4/RELEASE_ARM64_T7000") == 0) {
+        DEBUG_LOG("Detected RELEASE_ARM64_T7000");
+        *func = (init_func)init_RELEASE_ARM64_T7000_1630_37893214;
         ret = KERN_SUCCESS;
     }
     else if (strcmp(u.version, "Darwin Kernel Version 16.3.0: Thu Dec 15 22:41:45 PST 2016; root:xnu-3789.42.2~1/RELEASE_ARM64_S8000") == 0) {
