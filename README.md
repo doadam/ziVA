@@ -1,5 +1,5 @@
 # ziVA
-An iOS kernel exploit designated to work on all iOS devices &lt;= 10.3.1
+An iOS kernel exploit designated to work on all 64-bit iOS devices &lt;= 10.3.1
 
 # More general information
 https://blog.zimperium.com/zimperium-zlabs-ios-security-advisories/
