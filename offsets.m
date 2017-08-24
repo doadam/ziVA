@@ -469,8 +469,6 @@ cleanup:
     return ret;
 }
 
-void init_iphone_6_14c92() {}
-
 
 /*
  * Function name: 	offsets_determine_initializer_for_device_and_build
