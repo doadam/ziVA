@@ -52,9 +52,7 @@ offsets_t offsets_get_offsets() {
 
 typedef void (*init_func)(void);
 
-void init_RELEASE_ARM64_T7001_1630() {
-    
-    g_offsets.kernel_base = 0xFFFFFFF0060CC000;
+void init_default(){
     
     /*
      Find the string "AVE ERROR: SetSessionSettings chroma_format_idc = %d."
@@ -145,13 +143,39 @@ void init_RELEASE_ARM64_T7001_1630() {
      */
     g_offsets.encode_frame_offset_keep_cache = (0x3B50);
     
-    /* Vtable address of IOSurface */
-    
-    g_offsets.iofence_vtable_offset = 0xFFFFFFF006EF4B08 - g_offsets.kernel_base;
-    
     /* IOFence current fences list head in the IOSurface object */
     
     g_offsets.iosurface_current_fences_list_head = 0x210;
+    
+    g_offsets.struct_proc_p_comm = 0x26C;
+    
+    g_offsets.struct_proc_p_ucred = 0x100;
+    
+    g_offsets.struct_kauth_cred_cr_ref = 0x10;
+    
+    g_offsets.struct_proc_p_uthlist = 0x98;
+    
+    g_offsets.struct_uthread_uu_ucred = 0x168;
+    
+    g_offsets.struct_uthread_uu_list = 0x170;
+    
+    /*
+    	IOSurface->lockSurface
+    	Find "H264IOSurfaceBuf ERROR: lockSurface failed."
+    	Both strings have BLR X8 above them.
+    	Find the nearest LDR X8, [something, OFFSET].
+    	The OFFSET is mostly 0x98. If something else, then change this.
+     */
+    g_offsets.iosurface_vtable_offset_kernel_hijack = 0x98;
+}
+
+void init_RELEASE_ARM64_T7001_1630() {
+    
+    g_offsets.kernel_base = 0xFFFFFFF0060CC000;
+    
+    /* Vtable address of IOSurface */
+    
+    g_offsets.iofence_vtable_offset = 0xFFFFFFF006EF4B08 - g_offsets.kernel_base;
     
     g_offsets.panic = 0xFFFFFFF0070B6DD0 - g_offsets.kernel_base;
     
@@ -180,28 +204,6 @@ void init_RELEASE_ARM64_T7001_1630() {
     g_offsets.sysctl_hw_family = 0xFFFFFFF00753A678 - g_offsets.kernel_base;
     
     g_offsets.ret_gadget = 0xFFFFFFF0070B55B8 - g_offsets.kernel_base;
-    
-    g_offsets.struct_proc_p_comm = 0x26C;
-    
-    g_offsets.struct_proc_p_ucred = 0x100;
-    
-    g_offsets.struct_kauth_cred_cr_ref = 0x10;
-    
-    g_offsets.struct_proc_p_uthlist = 0x98;
-    
-    g_offsets.struct_uthread_uu_ucred = 0x168;
-    
-    g_offsets.struct_uthread_uu_list = 0x170;
-    
-    /*
-    	IOSurface->lockSurface
-    	Find "H264IOSurfaceBuf ERROR: lockSurface failed."
-    	Both strings have BLR X8 above them.
-    	Find the nearest LDR X8, [something, OFFSET].
-    	The OFFSET is mostly 0x98. If something else, then change this.
-     */
-    g_offsets.iosurface_vtable_offset_kernel_hijack = 0x98;
-    
 }
 
 /*
@@ -381,4 +383,3 @@ kern_return_t offsets_init() {
 cleanup:
     return ret;
 }
-
