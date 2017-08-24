@@ -1,7 +1,7 @@
 
 #### PROJECT SETTINGS ####
 # The name of the executable to be created
-BIN_NAME := zva 
+BIN_NAME := ziva 
 # Compiler used
 CXX ?= clang
 # Extension of source files used in the project
@@ -202,14 +202,6 @@ $(BIN_PATH)/$(BIN_NAME): $(OBJECTS)
 	@strip -x $@
 	@echo -en "\t Stripping time: "
 	@$(END_TIME)
-#	@echo "Copying $@ to device's /tmp"
-#	@$(START_TIME)
-#	@tar -czf - $(BIN_PATH) | ssh -p 2222 root@localhost 'tar -xzf - -C /tmp/'
-#	@$(END_TIME)
-#	@echo "Signing binary on device"
-#	@$(START_TIME)
-#	@ssh -p 2222 root@localhost 'cp /var/mobile/ent.xml /tmp/bin/debug/'
-#	@ssh -p 2222 root@localhost 'ldid -S/tmp/bin/debug/ent.xml /tmp/$@'
 
 # Add dependency files, if they exist
 -include $(DEPS)
