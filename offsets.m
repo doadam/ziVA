@@ -171,7 +171,7 @@ void init_iphone_6_14c92() {
 
 	g_offsets.l1icachesize_string = 0xFFFFFFF007057883 - g_offsets.kernel_base;
 
-	g_offsets.quad_format_string = 0xFFFFFFF007069601 - g_offsets.quad_format_string;
+	g_offsets.quad_format_string = 0xFFFFFFF007069601 - g_offsets.kernel_base;
 
 	g_offsets.null_terminator = 0xFFFFFFF00706A407 - g_offsets.kernel_base;
 
